@@ -1,7 +1,7 @@
 #Step 5
 
 import random, hangman_art, hangman_words
-
+from replit import clear
 # from sqlalchemy import false
 
 
@@ -28,6 +28,7 @@ for _ in range(word_length):
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
+    clear()
 
     #TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
     correct, choosed = False, False
