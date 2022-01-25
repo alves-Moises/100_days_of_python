@@ -13,12 +13,14 @@ def right_twice():
 while not at_goal():
     if front_is_clear():
         move()
-        if right_is_clear():
-            turn_right()
+        if front_is_clear():
+            move()
+        
+        turn_left()
       
     else:
-        while not front_is_clear():
-            turn_left()
+        if not front_is_clear():
+            turn_right()
             
             
 
