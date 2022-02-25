@@ -122,6 +122,7 @@ def main():
         print(f"Score:  {ai['total']}")
         print(f"Total player: {player['total']}")
         print(f"Total ai: {ai['total']}")
+
 main()
 
 
