@@ -59,6 +59,6 @@ def main():
         if not lose:
             score += 1
     print("End of game...")
-    print(f"aCTUAL SCORE: {score}")
+    print(f"ACTUAL SCORE: {score}")
 
 main()

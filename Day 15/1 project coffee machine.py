@@ -75,7 +75,7 @@ def get_payment(money):
         "nickel": 0.5,
         "dime": 0.1,
         "quarter": 0.25
-        }
+    }
 
     for coin in coins:
         print(f"How many {coin}?")
