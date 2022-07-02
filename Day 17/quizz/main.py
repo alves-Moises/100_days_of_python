@@ -5,7 +5,12 @@ from data import question_data
 
 question_bank = list()
 for item in question_data:
-    question_bank.append(Question(item["text"], item["answer"]))
+    question_bank.append(Question(item["question"], item["correct_answer"]))
 
 quiz = QuizBrain(question_bank)
-quiz.next_question()
+
+while quiz.still_has_questions():
+    quiz.next_question()
+
+print("Thanks!")
+print(f"Your final score was: {quiz.get_score()}")
